@@ -47,15 +47,15 @@ global.dtu = '🌐 My Instagram'
 global.urlnya = "https://www.instagram.com/vynutzxx22"
 
 //============= callButtons =============//
-global.dtc = '📞 Call Owner'
-global.phn = '+62 859-1935-78139'
+global.dtu = '🌐 My Web'
+global.urlnya = "https://linktr.ee/vynutzxx22"
 
 //============= Games ================//
 global.benar = '✅ ```Benar```'
 global.salah = '❌ ```Salah```'
 global.dikit = "dikit lagi, semangat ya :')"
 
-global.multiplier = 100 // The higher, The harder levelup
+global.multiplier = 1000 // The higher, The harder levelup
 
 // Sticker WM
 global.packname = data.namabot;
