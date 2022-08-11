@@ -23,7 +23,7 @@ module.exports = {
         if (seli > global.Intervalmsg) return console.log(new ReferenceError(`Pesan ${Intervalmsg} detik yang lalu diabaikan agar tidak nyepam`))
         
         global.namabot = await this.user.name
-        global.wm = namabot + ' ву ƒσкυѕ ι∂'
+        global.wm = namabot + ' ｖｙｎｕｔｚｘｘ２２'
         //console.log(JSON.stringify(m, null, 4))
         try {
             m = simple.smsg(this, m) || m
@@ -113,7 +113,7 @@ module.exports = {
                     if (!('premium' in user)) user.premium = false
                     if (!isNumber(user.premiumTime)) user.premiumTime = 0
                     if (!user.role) user.role = ''
-                    if (!('autolevelup' in user)) user.autolevelup = false
+                    if (!('autolevelup' in user)) user.autolevelup = true
                     if (!isNumber(user.pc)) user.pc = 0
                     //mancing
                     if (!isNumber(user.as)) user.as = 0
@@ -216,7 +216,7 @@ module.exports = {
                     premium: false,
                     premiumTime: 0,
                     role: '',
-                    autolevelup: false,
+                    autolevelup: true,
                     pc: 0,
                     // Mancing cuk
                     as: 0,
