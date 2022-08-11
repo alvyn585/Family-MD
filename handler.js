@@ -23,7 +23,7 @@ module.exports = {
         if (seli > global.Intervalmsg) return console.log(new ReferenceError(`Pesan ${Intervalmsg} detik yang lalu diabaikan agar tidak nyepam`))
         
         global.namabot = await this.user.name
-        global.wm = namabot + 'ｖｙｎｕｔｚｘｘ２２'
+        global.wm = namabot + ' ву ƒσкυѕ ι∂'
         //console.log(JSON.stringify(m, null, 4))
         try {
             m = simple.smsg(this, m) || m
@@ -39,7 +39,7 @@ module.exports = {
                     if (!isNumber(user.healt)) user.healt = 0
                     if (!isNumber(user.level)) user.level = 1
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 15
+                    if (!isNumber(user.limit)) user.limit = 10
                     if (!isNumber(user.lastseen)) user.lastseen = 0
                     if (!isNumber(user.usebot)) user.usebot = 0
                     if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -113,7 +113,7 @@ module.exports = {
                     if (!('premium' in user)) user.premium = false
                     if (!isNumber(user.premiumTime)) user.premiumTime = 0
                     if (!user.role) user.role = ''
-                    if (!('autolevelup' in user)) user.autolevelup = true
+                    if (!('autolevelup' in user)) user.autolevelup = false
                     if (!isNumber(user.pc)) user.pc = 0
                     //mancing
                     if (!isNumber(user.as)) user.as = 0
@@ -146,7 +146,7 @@ module.exports = {
                     healt: 100,
                     level: 1,
                     exp: 0,
-                    limit: 15,
+                    limit: 10,
                     lastseen: 0,
                     usebot: 0,
                     lastclaim: 0,
@@ -216,7 +216,7 @@ module.exports = {
                     premium: false,
                     premiumTime: 0,
                     role: '',
-                    autolevelup: true,
+                    autolevelup: false,
                     pc: 0,
                     // Mancing cuk
                     as: 0,
@@ -482,7 +482,7 @@ module.exports = {
                     if (xp > 200) m.reply('Ngecit -_-') // Hehehe
                     else m.exp += xp
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                        this.sendButton(m.chat, `⚠️ Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
+                        this.sendButton(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
                         // this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
                         continue // Limit habis
                     }
@@ -604,14 +604,14 @@ module.exports = {
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
-                        let pp = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                        let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
                         try {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
 
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat Datang, @user!').replace('Di Grup @subject', await this.getName(id)).replace('Baca Deskripsi Grup @desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
-                                (chat.sBye || this.bye || conn.bye || 'Selamat Tinggal, @user!')).replace('@user', await this.getName(user))
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
                             let wel = API('males', '/welcome2', {
                                 profile: pp,
                                 username: await this.getName(user),
