@@ -16,7 +16,6 @@ handler.help = ['linkgroup']
 handler.tags = ['group']
 handler.command = /^link(gro?up)?$/i
 
-handler.admin = true
 handler.group = true
 handler.botAdmin = true
 
