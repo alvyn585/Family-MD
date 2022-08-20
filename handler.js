@@ -690,7 +690,7 @@ global.dfail = async (type, m, conn) => {
         owner: '🙅 Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
         mods: '🙅 Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
         premium: '🌟 *Premium*\n1 Months *IDR 10000*\n1 Years *IDR 90000*\n\nHubungi *owner* kami..', 
-        group: '👥 Perintah ini hanya dapat digunakan di grup!\n\nSilahkan Join Grup Bot : https://chat.whatsapp.com/C3mbk4fnGHW3LbEEtFgj8T',
+        group: '👥 Perintah ini hanya dapat digunakan di grup!\n\nSilahkan Join Grup Bot : https://chat.whatsapp.com/JSf6GXURju36sAo7Us0PLB',
         private: '👤 Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: '🙅 Perintah ini hanya untuk *Admin* grup!',
         botAdmin: '🙏 Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
