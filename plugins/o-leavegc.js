@@ -42,5 +42,6 @@ handler.tags = ['group']
 handler.command = /^leavegroup|out|leavegc$/i
 
 handler.owner = true
+handler.group = true
 
 module.exports = handler
