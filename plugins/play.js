@@ -2,7 +2,7 @@ let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) => {
-  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} creeping death`
+  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} metallica creeping death`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
@@ -30,7 +30,7 @@ let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) =
 📽 *Ukuran File Video:* ${yt2.filesizeF}
 🔗 *Link:* ${vid.url}
 🌐 *Server y2mate:* ${usedServer}
- `.trim(), wm, `🎵 AUDIO ${filesizeF}`, usedPrefix + `yta ${vid.url}`, `📽 VIDEO ${yt2.filesizeF}`, usedPrefix + `yt ${vid.url}`, m)
+ `.trim(), wm, `🎵 AUDIO ${filesizeF}`, usedPrefix + `ytmp3 ${vid.url}`, `📽 VIDEO ${yt2.filesizeF}`, usedPrefix + `ytmp4 ${vid.url}`, m)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
