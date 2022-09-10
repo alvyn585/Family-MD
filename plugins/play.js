@@ -38,6 +38,7 @@ handler.command = /^(dj|musik|song|lagu|p(lay)?)$/i
 
 handler.exp = 3
 handler.limit = false
+handler.group = true
 handler.register = false
 
 module.exports = handler
