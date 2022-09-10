@@ -10,4 +10,6 @@ handler.help = ['afk <reason>']
 handler.tags = ['main']
 handler.command = /^afk$/i
 
+handler.group = true
+
 module.exports = handler
