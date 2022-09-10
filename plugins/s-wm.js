@@ -24,5 +24,6 @@ handler.tags = ['sticker']
 handler.command = /^wm$/i
 
 handler.limit = true
+handler.group = true
 
 module.exports = handler
