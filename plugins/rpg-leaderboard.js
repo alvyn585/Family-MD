@@ -26,14 +26,14 @@ ${sortedmoney.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.spli
     }
   })
 }
-handler.help = ['leaderboardrpg [jumlah user]', 'lbrpg [jumlah user]']
+handler.help = ['leaderboard [jumlah user]', 'lbrpg [jumlah user]']
 handler.tags = ['rpg']
-handler.command = /^(leaderboardrpg|lbrpg)$/i
+handler.command = /^(leaderboard|lbrpg|lb)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
-handler.private = true
+handler.group = true
+handler.private = false
 
 handler.admin = false
 handler.botAdmin = false
