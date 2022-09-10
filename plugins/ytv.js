@@ -22,4 +22,5 @@ handler.help = ['ytmp4 <query>']
 handler.tags = ['downloader']
 handler.command = /^yt(v(idi?e?o)?|mp4)?$/i
 handler.limit = true
+handler.group = true
 module.exports = handler
