@@ -25,4 +25,6 @@ handler.help = ['ytsearch <query>']
 handler.tags = ['tools', 'internet']
 handler.command = /^yts(earch)?$/i
 
+handler.group = true
+
 module.exports = handler
